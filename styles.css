@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.word-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.word-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;  /* 垂直居中 */
+    justify-content: flex-start; /* 水平左对齐 */
+    height: 40px;  /* 固定高度 */
+}
+
+.word {
+    font-weight: bold;
+    margin-right: 20px;  /* 留出空间与释义分开 */
+}
+
+.meaning {
+    font-size: 14px;
+    color: #888;
+    visibility: hidden;  /* 默认隐藏 */
+    height: 0;  /* 设置为 0 高度 */
+    transition: visibility 0s, opacity 0.3s ease;
+    opacity: 0;  /* 初始时完全透明 */
+    text-align: left; /* 确保中文左对齐 */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

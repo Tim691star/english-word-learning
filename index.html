@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单词学习网页</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>单词学习网页</h1>
+    <!-- 全局控制按钮 -->
+    <button id="toggle-all-btn" onclick="toggleAllMeanings()">显示所有释义</button>
+    
+    <div class="word-container">
+        <div class="word-item">
+            <span class="word">apple</span>
+            <p class="meaning" style="visibility: hidden;">苹果</p>
+        </div>
+        <div class="word-item">
+            <span class="word">banana</span>
+            <p class="meaning" style="visibility: hidden;">香蕉</p>
+        </div>
+        <!-- 你可以继续添加更多单词 -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
